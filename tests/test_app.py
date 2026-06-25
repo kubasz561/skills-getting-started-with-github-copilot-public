@@ -23,6 +23,7 @@ def test_unregister_participant_removes_email_from_activity():
     assert email not in activities[activity_name]["participants"]
 
 
+
 def test_unregister_participant_returns_not_found_when_missing():
     response = client.delete("/activities/Chess Club/participants/missing@example.com")
 
